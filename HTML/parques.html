@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parques Nacionales de Venezuela</title>
+  <link rel="stylesheet" href="../CSS/style5.css">
+  <link rel="icon" href="../MULTIMEDIA/alce.png">
+
+</head> 
+<body>
+  <header>
+    <h1>Explora los Parques Nacionales de Venezuela por Estado</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="#buscar">Buscar Parques</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+    </ul>
+  </nav>
+
+  <section id="inicio">
+    <h2 style="text-align: center; margin-bottom: 1rem;">Bienvenido a la Guía de Parques Nacionales</h2>
+    <p style="text-align: center;">Aquí encontrarás información detallada sobre los parques nacionales de Venezuela. Usa la barra de búsqueda para filtrar por estado.</p>
+  </section>
+
+  <section id="buscar">
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Buscar por estado..." onkeyup="filterParksByState()">
+      <button onclick="filterParksByState()">Buscar</button>
+    </div>
+
+    <div id="parkList">
+      <!-- Parques Nacionales -->
+        <!-- Amazonas -->
+  <div class="park-card" data-state="Amazonas">
+    <h2>Parque Nacional Yapacana</h2>
+    <p><strong>Estado:</strong> Amazonas<br>Tepuyes sagrados y selvas vírgenes amazónicas</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.005294549825!2d-66.7155221252665!3d3.814202196159637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8de1a4582bdca3a9%3A0x87e6c89feea081b2!2sParque%20Nacional%20Yapacana!5e1!3m2!1ses!2sve!4v1738713729608!5m2!1ses!2sve" 
+    width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="park-card" data-state="Amazonas">
+    <h2>Parque Nacional Serranía La Neblina</h2>
+    <p><strong>Estado:</strong> Amazonas<br>Frontera con Brasil, mesetas tepuyanas de 1,360,000 ha</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3791.5103248294186!2d-65.66843172527558!3d1.2448784987432657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8dfbf2565026b927%3A0x30a58410fa4ad25!2sParque%20Nacional%20Serran%C3%ADa%20La%20Neblina!5e1!3m2!1ses!2sve!4v1738714946592!5m2!1ses!2sve" 
+    width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="park-card" data-state="Amazonas">
+    <h2>Parque Nacional Duida-Marahuaca</h2>
+    <p><strong>Estado:</strong> Amazonas<br>Tepuyes ancestrales con ecosistemas únicos</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d484470.74705944076!2d-65.89332694600141!3d3.598622837765081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8de6bda3b42eed63%3A0x5ed7f6703f86060e!2sParque%20Nacional%20Duida%20Marahuaka%2C%207101%2C%20Amazonas!5e1!3m2!1ses!2sve!4v1738715184478!5m2!1ses!2sve" 
+    width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="park-card" data-state="Amazonas">
+    <h2>Parque Nacional Parima-Tapirapeco</h2>
+    <p><strong>Estado:</strong> Amazonas<br>El más extenso (39,000 km²), frontera con Brasil</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3790.2323879164005!2d-64.71881642527397!3d1.9397042980426995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8de541c7a569e059%3A0x2e4c99e6d1b9c408!2sParque%20Nacional%20Parima-Tapirapec%C3%B3!5e1!3m2!1ses!2sve!4v1738723214170!5m2!1ses!2sve"
+     width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <!-- Bolívar -->
+  <div class="park-card" data-state="Bolívar">
+    <h2>Parque Nacional Canaima</h2>
+    <p><strong>Estado:</strong> Bolívar<br>Patrimonio UNESCO, Salto Ángel (979 m)</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3774.9459524035924!2d-62.00257492525543!3d5.499999994479917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8dc0c55555555555%3A0x94f51378e4df67cb!2sParque%20Nacional%20Canaima!5e1!3m2!1ses!2sve!4v1738723523575!5m2!1ses!2sve" 
+    width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="park-card" data-state="Bolívar">
+    <h2>Parque Nacional Jaua-Sarisariñama</h2>
+    <p><strong>Estado:</strong> Bolívar<br>Simas geológicas de 350 m de profundidad</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241787.3519223248!2d-64.45269420546872!3d5.008108299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ddd4db3c31e0f75%3A0x30f5f30d11e53159!2sParque%20Nacional%20Jaua-Sarisari%C3%B1ama!5e1!3m2!1ses!2sve!4v1738723665415!5m2!1ses!2sve"
+    width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="park-card" data-state="Bolívar">
+    <h2>Parque Nacional Caura</h2>
+    <p><strong>Estado:</strong> Bolívar<br>75,340 km² de selva virgen</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d239297.8432026393!2d-64.11222540858255!3d5.123522223635761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x8ddb53bbeb900bed%3A0x16a96f3ba291ee0a!2zUsOtbyBDYXVyYSwgODAwMSwgQm9sw612YXI!3m2!1d5.1171219!2d-64.14664859999999!5e1!3m2!1ses!2sve!4v1738724007717!5m2!1ses!2sve"
+     width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <!-- Región Andina -->
+  <div class="park-card" data-state="Mérida, Barinas">
+    <h2>Parque Nacional Sierra Nevada</h2>
+    <p><strong>Estado:</strong> Mérida/Barinas<br>Pico Bolívar(4,978 m), pico Humboldt (4,942m), Pico Bompland (4.883 m),
+    <br>La Concha (4.920 m), Espejo (4.765 m), El Toro (4.755 m) y El León (4.740 m);</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55578.690714567085!2d-70.9434907223772!3d8.437339399534036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e648385d73a4249%3A0xc66534ae56e720cd!2sParque%20Nacional%20Sierra%20Nevada!5e1!3m2!1ses-419!2sve!4v1738726828653!5m2!1ses-419!2sve" 
+    width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="park-card" data-state="Táchira, Merida">
+    <h2>Parque Nacional Juan Pablo Peñaloza</h2>
+    <p><strong>Estado:</strong> Táchira/Merida <br>Alberga más de 130 lagunas de origen glaciar, de las cuales sobresalen La Verde, La Grande, La Negra, Hoyada Grande y La Piedra.
+      <br>Uribante, Escalante, La Grita, Mocotíes, El Molino, Torbes, Orope, Umuquena, Bobo, Pereña y Quebrada Grande.
+      <br>Batallón, La Negra, El Zumbador, Las Coloradas.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3756.0425180452075!2d-71.81054170903839!3d7.940671519743368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e65d22a6e925c2d%3A0xa8d4017da83f1e98!2sParque%20Nacional%20Juan%20Pablo%20Pe%C3%B1aloza!5e1!3m2!1ses-419!2sve!4v1738726540371!5m2!1ses-419!2sve" 
+    width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="park-card" data-state="Táchira, Apure">
+    <h2>Parque Nacional El Tamá</h2>
+    <p><strong>Estado:</strong> Táchira/Apure<br>Nacientes del río Orinoco</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d900.025130970883!2d-72.18840327654037!3d7.540777674604269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e661bedf3741077%3A0x60c22652051ab37d!2sParque%20Nacional%20El%20Tam%C3%A1!5e1!3m2!1ses-419!2sve!4v1738726474035!5m2!1ses-419!2sve" 
+    width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="park-card" data-state="Mérida, Trujillo">
+    <h2>Parque Nacional Sierra La Culata</h2>
+    <p><strong>Estado:</strong> Mérida/Trujillo<br>Páramos y bosques nublados</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119890.89854084695!2d-71.29727840423584!3d8.915005098211443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e637c4c59efc39b%3A0xf826d9740531e60d!2sParque%20Nacional%20Sierra%20La%20Culata!5e1!3m2!1ses-419!2sve!4v1738728036760!5m2!1ses-419!2sve" 
+    width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <!-- Región Caribe -->
+  <div class="park-card" data-state="Dependencias Federales">
+    <h2>Parque Nacional Archipiélago Los Roques</h2>
+    <p><strong>Estado:</strong> Dependencias Federales<br>Atolón coralino con 42 islas</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7422.863933328433!2d-66.78069950940606!3d11.861166403445372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sparque%20nacional%20archipi%C3%A9lago%20de%20los%20roques!5e1!3m2!1ses-419!2sve!4v1738728103800!5m2!1ses-419!2sve" 
+    width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="park-card" data-state="Nueva Esparta">
+    <h2>Parque Nacional Laguna de La Restinga</h2>
+    <p><strong>Estado:</strong> Nueva Esparta<br>Manglares en Margarita</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.9386024107544!2d-64.15257492519203!3d10.983333289178281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c31f0aeaaaaaaab%3A0x46dfc0a00f7fd667!2sParque%20Nacional%20Laguna%20de%20La%20Restinga!5e1!3m2!1ses-419!2sve!4v1738728264434!5m2!1ses-419!2sve" 
+    width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="park-card" data-state="Falcón">
+    <h2>Parque Nacional Médanos de Coro</h2>
+    <p><strong>Estado:</strong> Falcón<br>Dunas de 40 m junto al mar</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20875.202891763038!2d-69.68566559473653!3d11.440209139366665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e85d3495729edad%3A0x85fb7aacc6656bf6!2sParque%20Nacional%20M%C3%A9danos%20de%20Coro!5e1!3m2!1ses-419!2sve!4v1738728338414!5m2!1ses-419!2sve" 
+    width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="park-card" data-state="Falcón">
+    <h2>Parque Nacional Morrocoy</h2>
+    <p><strong>Estado:</strong> Falcón<br>Cayo Sal, Cayo Muerto, Cayo Peraza, Cayo Sombrero, Cayo Paiclá, Cayo Los Pescadores, Cayo Playa Azul, Cayo Tucupido</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55686.50656146169!2d-68.3222163050656!3d10.86172916018215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e810e16dd74f957%3A0x821f0a5b1a954c4e!2sParque%20Nacional%20Morrocoy!5e1!3m2!1ses-419!2sve!4v1738729024827!5m2!1ses-419!2sve" 
+    width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="park-card" data-state="Sucre, Anzoátegui">
+    <h2>Parque Nacional Mochima</h2>
+    <p><strong>Estado:</strong> Sucre/Anzoátegui<br>Playas turquesas y arrecifes</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d723.0483834118529!2d-64.4539747146589!3d10.319169651369803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2d87590fffffff%3A0xe8440cda41839a42!2sParque%20Nacional%20Mochima!5e1!3m2!1ses-419!2sve!4v1738728453768!5m2!1ses-419!2sve" 
+    width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <!-- Región Central -->
+  <div class="park-card" data-state="Aragua, Carabobo">
+    <h2>Parque Nacional Henri Pittier</h2>
+    <p><strong>Estado:</strong> Aragua/Carabobo<br>Primer parque nacional (1937)</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11547.233034015!2d-67.62452985580121!3d10.382509191392945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e803055555555ab%3A0xcd8a37a2490315cc!2sParque%20Nacional%20Henri%20Pittier!5e1!3m2!1ses-419!2sve!4v1738728503252!5m2!1ses-419!2sve" 
+    width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="park-card" data-state="Distrito Capital, Miranda">
+    <h2>Parque Nacional Waraira Repano</h2>
+    <p><strong>Estado:</strong> Distrito Capital/Miranda<br>Pulmón de Caracas (85,192 ha)</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d667.6979744552423!2d-66.7624272447352!3d10.495633698969186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a5700469d1b15%3A0xc56ede603f915c76!2sParque%20Nacional%20Waraira%20Repano%20sector%20Ayala!5e1!3m2!1ses-419!2sve!4v1738729220383!5m2!1ses-419!2sve" 
+    width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="park-card" data-state="Miranda">
+    <h2>Parque Nacional Laguna de Tacarigua</h2>
+    <p><strong>Estado:</strong> Miranda<br>Ecosistema lagunar costero</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5104.39517145514!2d-65.80949083369457!3d10.08036217179582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2c9e65678efda7%3A0xaee36a3a1fe1face!2sParque%20Nacional%20Laguna%20de%20Tacarigua!5e1!3m2!1ses-419!2sve!4v1738729264575!5m2!1ses-419!2sve" 
+    width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <!-- Región Llanos -->
+  <div class="park-card" data-state="Guárico">
+    <h2>Parque Nacional Aguaro-Guariquito</h2>
+    <p><strong>Estado:</strong> Guárico<br>Médanos y bosques de galería</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d188531.54805833692!2d-66.79742771716936!3d8.364722521150089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8dd67e6f985ea11b%3A0xea46c3e6f34e340e!2sParque%20Nacional%20Aguaro-Guariquito.!5e1!3m2!1ses!2sve!4v1738761231764!5m2!1ses!2sve" 
+    width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="park-card" data-state="Apure">
+    <h2>Parque Nacional Santos Luzardo</h2>
+    <p><strong>Estado:</strong> Apure<br>Llanos con esteros y chigüires</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.3440250391777!2d-67.57342852524492!3d6.720912193275014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e77bbd87dc2aa09%3A0x88ffdc74d69aa96d!2sParque%20Nacional%20Capanaparo-Cinaruco!5e1!3m2!1ses!2sve!4v1738761322679!5m2!1ses!2sve" 
+    width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="park-card" data-state="Apure">
+    <h2>Parque Nacional Cinaruco-Capanaparo</h2>
+    <p><strong>Estado:</strong> Apure<br>Médanos fluviales y sabanas</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.3440250391777!2d-67.57342852524492!3d6.720912193275014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e77bbd87dc2aa09%3A0x88ffdc74d69aa96d!2sParque%20Nacional%20Capanaparo-Cinaruco!5e1!3m2!1ses!2sve!4v1738761380249!5m2!1ses!2sve"
+    width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <!-- Región Occidental -->
+  <div class="park-card" data-state="Zulia">
+    <h2>Parque Nacional Sierra de Perijá</h2>
+    <p><strong>Estado:</strong> Zulia<br>Selvas nubladas fronterizas</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5280.106988757971!2d-72.99510576264638!3d9.392399183148752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e60f6aaaaaaaaab%3A0xae8452db6821e34a!2sParque%20Nacional%20Sierra%20de%20Perij%C3%A1!5e1!3m2!1ses!2sve!4v1738765244399!5m2!1ses!2sve" 
+    width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="park-card" data-state="Lara, Portuguesa">
+    <h2>Parque Nacional Terepaima</h2>
+    <p><strong>Estado:</strong> Lara/Portuguesa<br>Bosques húmedos tropicales</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1063.875341033377!2d-69.30125966088433!3d10.003887690101694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8760908a04554f%3A0xa8f0902df8eec30!2sParque%20Nacional%20Terepaima!5e1!3m2!1ses!2sve!4v1738765300246!5m2!1ses!2sve"
+     width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="park-card" data-state="Lara">
+    <h2>Parque Nacional Cerro Saroche</h2>
+    <p><strong>Estado:</strong> Lara<br>Paisajes áridos y matorrales</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3728.6381245019434!2d-69.62403112519883!3d10.52179218961194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e870655555552e7%3A0x1fe651d7c0e950d3!2sParque%20Nacional%20Cerro%20Saroche!5e1!3m2!1ses!2sve!4v1738765350645!5m2!1ses!2sve" 
+    width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <!-- Región Oriental -->
+  <div class="park-card" data-state="Monagas, Sucre">
+    <h2>Parque Nacional El Guácharo</h2>
+    <p><strong>Estado:</strong> Monagas/Sucre<br>Cavernas con aves nocturnas</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d163687.5873701707!2d-63.558855982731465!3d10.198555287469182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sparque%20nacional%20el%20gu%C3%A1charo%20monagas%20sucre%20venezuela!5e1!3m2!1ses!2sve!4v1738765480403!5m2!1ses!2sve" 
+    width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="park-card" data-state="Sucre">
+    <h2>Parque Nacional Península de Paria</h2>
+    <p><strong>Estado:</strong> Sucre<br>Bosques húmedos hasta el mar</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d138681.8018172473!2d-62.54356494335854!3d10.682906125086113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c341fa4593a7d01%3A0xda55dc20f698f25e!2sParque%20Nacional%20Pen%C3%ADnsula%20de%20Paria!5e1!3m2!1ses!2sve!4v1738765546977!5m2!1ses!2sve" 
+    width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="park-card" data-state="Sucre">
+    <h2>Parque Nacional Turuépano</h2>
+    <p><strong>Estado:</strong> Sucre<br>Delta del Orinoco occidental</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10129.903721320079!2d-62.903977615770124!3d10.471659751301447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c33f3518416bed5%3A0xecbb4be8575c6df7!2sParque%20Nacional%20Turu%C3%A9pano!5e1!3m2!1ses!2sve!4v1738765606858!5m2!1ses!2sve" 
+    width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <!-- Región Insular -->
+  <div class="park-card" data-state="Nueva Esparta">
+    <h2>Parque Nacional Cerro El Copey</h2>
+    <p><strong>Estado:</strong> Nueva Esparta<br>Selva nublada en Margarita</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.618699879615!2d-63.89913092519153!3d11.008671889154567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c318dbb9e7ae843%3A0x47a90b145f5ea875!2sParque%20Nacional%20Cerro%20El%20Copey!5e1!3m2!1ses!2sve!4v1738765736115!5m2!1ses!2sve"
+     width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <!-- Región Delta -->
+  <div class="park-card" data-state="Delta Amacuro">
+    <h2>Parque Nacional Mariusa</h2>
+    <p><strong>Estado:</strong> Delta Amacuro<br>Humedales del Delta del Orinoco</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d75671.36900057425!2d-61.485322470518604!3d9.4017948628391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c35511be513fe2f%3A0x3c0e6355659e70f9!2sParque%20Nacional%20Delta%20del%20Orinoco!5e1!3m2!1ses!2sve!4v1738765672879!5m2!1ses!2sve" 
+    width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <!-- Región Centroccidental -->
+  <div class="park-card" data-state="Yaracuy">
+    <h2>Parque Nacional Yurubí</h2>
+    <p><strong>Estado:</strong> Yaracuy<br>Selva nublada y cascadas</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119347.73783913955!2d-68.89177990273438!3d10.440511300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e80d0155555555b%3A0xd4735726bea4fe10!2sParque%20Nacional%20Yurub%C3%AD!5e1!3m2!1ses!2sve!4v1738765797902!5m2!1ses!2sve"
+     width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="park-card" data-state="Falcón">
+    <h2>Parque Nacional Juan Crisóstomo Falcón</h2>
+    <p><strong>Estado:</strong> Falcón<br>Cavernas y ríos subterráneos</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.8736773700944!2d-69.55482872226206!3d11.223775360470778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e86843fffffffff%3A0xa7d7821f8f11c975!2sParque%20Nacional%20Juan%20Cris%C3%B3stomo%20Falc%C3%B3n!5e1!3m2!1ses!2sve!4v1738765928832!5m2!1ses!2sve"
+     width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="park-card" data-state="Falcón">
+    <h2>Parque Nacional Cueva de la Quebrada del Toro</h2>
+    <p><strong>Estado:</strong> Falcón<br>Sistema cavernario único</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.831755035948!2d-69.0161455251942!3d10.832183589320035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e86ce513692be0f%3A0x1aa25b1b636c6674!2sParque%20Nacional%20Cueva%20de%20la%20Quebrada%20El%20Toro!5e1!3m2!1ses!2sve!4v1738765969986!5m2!1ses!2sve"
+     width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <!-- Región de Los Andes -->
+  <div class="park-card" data-state="Táchira">
+    <h2>Parque Nacional Chorro El Indio</h2>
+    <p><strong>Estado:</strong> Táchira<br>Cascadas y bosques nublados</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d761.1350664357649!2d-72.20268076650635!3d7.759597601539971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e666d0069a56c37%3A0x9998e81804c1f9a!2sParque%20Nacional%20Chorro%20del%20Indio%20m.!5e1!3m2!1ses!2sve!4v1738766017734!5m2!1ses!2sve" 
+    width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="park-card" data-state="Mérida, Táchira">
+    <h2>Parque Nacional Páramos Batallón y La Negra</h2>
+    <p><strong>Estado:</strong> Mérida/Táchira<br>Ecosistemas parameros</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92993.11317235244!2d-72.02568262252233!3d8.053096012465113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e642acaf18daee9%3A0xacddb4ecc896a873!2zUMOhcmFtbyBkZWwgQmF0YWxsw7Nu!5e1!3m2!1ses!2sve!4v1738766135578!5m2!1ses!2sve"
+     width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="park-card" data-state="Barinas, Mérida, Táchira">
+    <h2>Parque Nacional Tapo-Caparo</h2>
+    <p><strong>Estado:</strong> Barinas/Mérida/Táchira<br>Protección de cuencas hidrográficas</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17992.36411009665!2d-71.15226579436904!3d8.161582130218687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e64f8a18fa3adeb%3A0x6aa007768bb66e91!2sParque%20Nacional%20Tapo-Caparo%2C%20M%C3%A9rida!5e1!3m2!1ses!2sve!4v1738766270819!5m2!1ses!2sve"
+     width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="park-card" data-state="Lara, Portuguesa">
+    <h2>Parque Nacional Dinira</h2>
+    <p><strong>Estado:</strong> Lara/Portuguesa<br>Páramos y bosques húmedos</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d258030.16253485242!2d-70.17714036969593!3d9.506241536923154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sparque%20nacional%20dinira!5e1!3m2!1ses!2sve!4v1738766341352!5m2!1ses!2sve" 
+    width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="park-card" data-state="Yaracuy, Cojedes">
+    <h2>Parque Nacional Tirgua</h2>
+    <p><strong>Estado:</strong> Yaracuy/Cojedes<br>Montañas boscosas</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.3331284398682!2d-68.67037752520837!3d9.86486209023373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8751a4ee9f69af%3A0x6cb17c1c391432e0!2sParque%20Nacional%20Tirgua!5e1!3m2!1ses!2sve!4v1738766410434!5m2!1ses!2sve"
+     width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="park-card" data-state="Zulia">
+    <h2>Parque Nacional Ciénagas de Juan Manuel</h2>
+    <p><strong>Estado:</strong> Zulia<br>Humedales lacustres</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d41803.9369963627!2d-72.32444023613432!3d9.518747221293772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sparque%20nacional%20cienaga%20de%20juan%20manuel!5e1!3m2!1ses!2sve!4v1738766470233!5m2!1ses!2sve"
+     width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="park-card" data-state="Lara, Portuguesa">
+    <h2>Parque Nacional El Guache</h2>
+    <p><strong>Estado:</strong> Lara/Portuguesa<br>Bosques secos tropicales</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119668.90497162187!2d-69.6184777541159!3d9.567645088112783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e7da3a49a728421%3A0x4d38d3e4a27ef622!2sParque%20Nacional%20El%20Guache%2C%20Portuguesa!5e1!3m2!1ses!2sve!4v1738766519965!5m2!1ses!2sve" 
+    width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="park-card" data-state="Distrito Capital, Miranda">
+    <h2>Parque Nacional Macarao</h2>
+    <p><strong>Estado:</strong> Distrito Capital/Miranda<br>Fuentes de agua para Caracas</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3730.0787561113616!2d-67.18010712520062!3d10.401927689725005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a8b5af1c89631%3A0x177edf443384803a!2sParque%20Nacional%20Macarao!5e1!3m2!1ses!2sve!4v1738766585707!5m2!1ses!2sve" 
+    width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="park-card" data-state="Carabobo">
+    <h2>Parque Nacional San Esteban</h2>
+    <p><strong>Estado:</strong> Carabobo<br>Islas costeras y bosques</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3730.1450138885275!2d-67.96686122520076!3d10.396381989730227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e805030b4fd345b%3A0xbbc45c7093c17458!2sParque%20Nacional%20San%20Esteban!5e1!3m2!1ses!2sve!4v1738766642727!5m2!1ses!2sve" 
+    width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="park-card" data-state="Apure">
+    <h2>Parque Nacional Río Viejo San Camilo</h2>
+    <p><strong>Estado:</strong> Apure<br>Llanos orientales</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2036.1288242202402!2d-67.96535077440022!3d10.39611361349344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sparque%20nacional%20rio%20viejo%20san%20camilo!5e1!3m2!1ses!2sve!4v1738766744230!5m2!1ses!2sve" 
+    width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="cta">
+    <h2>¿Tienes preguntas?</h2>
+    <p>Contáctenos para obtener más información sobre los parques nacionales de Venezuela.</p>
+    <a href="index.html">Contactar</a>
+  </section>
+
+  <footer>
+    <p>&copy; INPARQUES 2025</p>
+  </footer>
+
+  <script>
+    function normalizeText(text) {
+      // Elimina acentos y convierte a minúsculas
+      return text
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase();
+    }
+
+    function filterParksByState() {
+      const input = normalizeText(document.getElementById('searchInput').value);
+      const parkCards = document.querySelectorAll('.park-card');
+
+      parkCards.forEach(card => {
+        const state = normalizeText(card.getAttribute('data-state'));
+        if (state.includes(input)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>

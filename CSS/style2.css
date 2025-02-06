@@ -1,0 +1,137 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    } 
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f9fafb;
+      color: #333;
+    }
+
+    header {
+      background: #22a664;
+      color: #f6fbf9;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background: #ffffff;
+      color: #22a664;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5rem 0;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-bottom: 1px solid rgba(46, 125, 50, 0.2);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      color: #000000;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+    }
+
+    nav ul li a:hover {
+      color: #22a664;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .quiz-container {
+      display: none;
+    }
+
+    .quiz-container.active {
+      display: block;
+    }
+
+    .question {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .options label {
+      display: block;
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+      background: #f0f4f8;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease-in-out;
+    }
+
+    .options label:hover {
+      background: #e0eaf2;
+    }
+
+    .options input[type="radio"] {
+      margin-right: 0.5rem;
+    }
+
+    .submit-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background: #22a664;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease-in-out;
+    }
+
+    .submit-btn:hover {
+      background: #22a664;
+    }
+
+    .feedback {
+      margin-top: 1rem;
+      font-size: 1rem;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .feedback.correct {
+      color: #22a664;
+    }
+
+    .feedback.incorrect {
+      color: red;
+    }
+
+    .result {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    footer {
+      background: #22a664;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }

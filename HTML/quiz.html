@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz sobre Parques Nacionales de Venezuela</title>
+  <link rel="stylesheet" href="../CSS/style2.css">
+  <link rel="icon" href="../MULTIMEDIA/alce.png">
+</head>
+<body> 
+  <header>
+    <h1>Quiz sobre Parques Nacionales de Venezuela</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="index.html">INPARQUES</a></li>
+      <li><a href="index.html">Acerca de Nosotros</a></li>
+      <li><a href="index.html">Actividades</a></li>
+      <li><a href="index.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div id="quiz-start">
+      <p>Bienvenido al Quiz sobre los Parques Nacionales de Venezuela. Responde las siguientes preguntas para poner a prueba tus conocimientos.</p>
+      <button id="start-btn" class="submit-btn">Comenzar Quiz</button>
+    </div>
+
+    <div id="quiz-container" class="quiz-container">
+      <div id="question-container"></div>
+      <div id="feedback" class="feedback"></div>
+      <button id="next-btn" class="submit-btn" style="display: none;">Siguiente Pregunta</button>
+    </div>
+
+    <div id="quiz-end" class="quiz-container">
+      <div class="result" id="result"></div>
+      <button id="restart-btn" class="submit-btn">Reiniciar Quiz</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; INPARQUES 2025</p>
+  </footer>
+
+  <script>
+    const questions = [
+      {
+        question: "¿Cuál es el parque nacional más antiguo de Venezuela?",
+        options: ["Canaima", "Henri Pittier", "Mochima", "Sierra Nevada"],
+        answer: "Henri Pittier",
+      },
+      {
+        question: "¿En qué estado se encuentra el Parque Nacional Canaima?",
+        options: ["Bolívar", "Amazonas", "Delta Amacuro", "Sucre"],
+        answer: "Bolívar",
+      },
+      {
+  question: "¿Cuál parque nacional venezolano es Patrimonio de la Humanidad UNESCO?",
+  options: ["Mochima", "Canaima", "Henri Pittier", "Sierra Nevada"],
+  answer: "Canaima",
+},
+{
+  question: "¿En qué parque se encuentra el Salto Ángel, la cascada más alta del mundo?",
+  options: ["Sierra Nevada", "Yapacana", "Canaima", "El Guácharo"],
+  answer: "Canaima",
+},
+{
+  question: "¿Cuál es el parque nacional más grande de Venezuela?",
+  options: ["Canaima", "Parima-Tapirapeco", "Caura", "Aguaro-Guariquito"],
+  answer: "Parima-Tapirapeco",
+},
+{
+  question: "¿Qué parque protege los famosos Médanos de Coro?",
+  options: ["Falcón", "Mochima", "Morrocoy", "Juan Crisóstomo Falcón"],
+  answer: "Juan Crisóstomo Falcón",
+},
+{
+  question: "¿En qué estado se localiza el Parque Nacional Península de Paria?",
+  options: ["Anzoátegui", "Sucre", "Nueva Esparta", "Monagas"],
+  answer: "Sucre",
+},
+{
+  question: "¿Qué parque protege el archipiélago coralino de Los Roques?",
+  options: ["Dependencias Federales", "Nueva Esparta", "Miranda", "Aragua"],
+  answer: "Dependencias Federales",
+},
+{
+  question: "¿Cuál parque alberga la Cueva del Guácharo?",
+  options: ["El Tamá", "Mochima", "El Guácharo", "Waraira Repano"],
+  answer: "El Guácharo",
+},
+{
+  question: "¿Qué parque nacional se encuentra en la Isla de Margarita?",
+  options: ["Mochima", "Laguna de La Restinga", "Cerro El Copey", "Turuépano"],
+  answer: "Laguna de La Restinga",
+},
+{
+  question: "¿En qué parque se ubica el Pico Bolívar?",
+  options: ["Sierra La Culata", "El Tamá", "Sierra Nevada", "Páramos Batallón"],
+  answer: "Sierra Nevada",
+},
+{
+  question: "¿Qué parque protege la Sierra de Perijá en Zulia?",
+  options: ["Perijá", "El Tamá", "Tapo-Caparo", "Cinaruco-Capanaparo"],
+  answer: "Perijá",
+}
+    ];
+
+    let currentQuestionIndex = 0;
+    let score = 0;
+
+    const startContainer = document.getElementById("quiz-start");
+    const quizContainer = document.getElementById("quiz-container");
+    const questionContainer = document.getElementById("question-container");
+    const feedbackDiv = document.getElementById("feedback");
+    const nextBtn = document.getElementById("next-btn");
+    const endContainer = document.getElementById("quiz-end");
+    const resultDiv = document.getElementById("result");
+    const restartBtn = document.getElementById("restart-btn");
+    const startBtn = document.getElementById("start-btn");
+
+    // Mostrar la primera pregunta
+    function showQuestion() {
+      feedbackDiv.textContent = ""; // Limpiar retroalimentación
+      feedbackDiv.className = "feedback"; // Resetear clases
+      nextBtn.style.display = "none"; // Ocultar botón "Siguiente"
+
+      const currentQuestion = questions[currentQuestionIndex];
+      questionContainer.innerHTML = `
+        <div class="question">${currentQuestion.question}</div>
+        <div class="options">
+          ${currentQuestion.options
+            .map(
+              (option, index) => `
+                <label>
+                  <input type="radio" name="answer" value="${option}">
+                  ${option}
+                </label>
+              `
+            )
+            .join("")}
+        </div>
+      `;
+
+      // Agregar event listeners a los botones de radio
+      const radioButtons = document.querySelectorAll('input[name="answer"]');
+      radioButtons.forEach((radio) => {
+        radio.addEventListener("change", handleAnswer);
+      });
+    }
+
+    // Manejar la respuesta del usuario
+    function handleAnswer(event) {
+      const selectedOption = event.target;
+      const userAnswer = selectedOption.value;
+      const correctAnswer = questions[currentQuestionIndex].answer;
+
+      if (userAnswer === correctAnswer) {
+        feedbackDiv.textContent = "¡Respuesta Correcta!";
+        feedbackDiv.className = "feedback correct";
+        score++;
+      } else {
+        feedbackDiv.textContent = `Respuesta Incorrecta. La respuesta correcta es: ${correctAnswer}`;
+        feedbackDiv.className = "feedback incorrect";
+      }
+
+      nextBtn.style.display = "block"; // Mostrar el botón "Siguiente"
+    }
+
+    // Avanzar a la siguiente pregunta
+    function nextQuestion() {
+      currentQuestionIndex++;
+
+      if (currentQuestionIndex < questions.length) {
+        showQuestion();
+      } else {
+        endQuiz();
+      }
+    }
+
+    // Finalizar el quiz
+    function endQuiz() {
+      quizContainer.classList.remove("active");
+      endContainer.classList.add("active");
+      resultDiv.textContent = `¡Quiz completado! Tu puntaje es: ${score} de ${questions.length}`;
+    }
+
+    // Reiniciar el quiz
+    function restartQuiz() {
+      currentQuestionIndex = 0;
+      score = 0;
+      startContainer.classList.add("active");
+      quizContainer.classList.remove("active");
+      endContainer.classList.remove("active");
+    }
+
+    // Eventos
+    startBtn.addEventListener("click", () => {
+      startContainer.classList.remove("active");
+      quizContainer.classList.add("active");
+      showQuestion();
+    });
+
+    nextBtn.addEventListener("click", nextQuestion);
+
+    restartBtn.addEventListener("click", restartQuiz);
+
+    // Inicialización
+    startContainer.classList.add("active");
+    quizContainer.classList.remove("active");
+    endContainer.classList.remove("active");
+  </script>
+</body>
+</html>

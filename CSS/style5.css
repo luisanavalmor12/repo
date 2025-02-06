@@ -1,0 +1,135 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f9fafb;
+      color: #333;
+    }
+
+    header {
+      background: #22a664;
+      color: #ffffff;
+      text-align: center;
+      padding: 1rem 0;
+      border-bottom: 2px solid rgba(46, 125, 50, 0.2);
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+    
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: #ffffff;
+      color: #22a664;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5rem 0;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-bottom: 1px solid rgba(46, 125, 50, 0.2);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      color: #000000;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+    }
+
+    nav ul li a:hover {
+      color: #22a664;
+    }
+
+    section {
+      padding: 2rem;
+      margin: 1rem auto;
+      max-width: 1200px;
+    }
+
+    .search-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .search-container input[type="text"] {
+      width: 300px;
+      padding: 0.5rem;
+      border: 1px solid #22a664;
+      border-radius: 5px 0 0 5px;
+      outline: none;
+    }
+
+    .search-container button {
+      padding: 0.5rem 1rem;
+      background: #22a664;
+      color: white;
+      border: none;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+      transition: background 0.3s ease-in-out;
+    }
+
+    .search-container button:hover {
+      background:#22a664;
+    }
+
+    .park-card {
+      background: #ffffff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1rem;
+      border: 1px solid rgba(46, 125, 50, 0.2);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .park-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(27, 94, 32, 0.4);
+    }
+
+    .park-card h2 {
+      margin-bottom: 0.5rem;
+      color: #22a664;
+    }
+
+    .park-card p {
+      line-height: 1.8;
+    }
+
+    .park-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+
+    footer {
+      background: #22a664;
+      color: #ffffff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      border-top: 1px solid rgba(46, 125, 50, 0.2);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }

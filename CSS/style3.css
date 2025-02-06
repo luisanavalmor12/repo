@@ -1,0 +1,136 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box; 
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f9fafb;
+      color: #333;
+    }
+
+    header {
+      background: #22a664;
+      color: #ffffff;
+      text-align: center;
+      padding: 1rem 0;
+      border-bottom: 2px solid rgba(46, 125, 50, 0.2);
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: #ffffff;
+      color: #22a664;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5rem 0;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-bottom: 1px solid rgba(46, 125, 50, 0.2);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      color: #22a664;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+    }
+
+    nav ul li a:hover {
+      color: #22a664;
+    }
+
+    section {
+      padding: 2rem;
+      margin: 1rem auto;
+      max-width: 1200px;
+      text-align: center;
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background-color: #22a664;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+    }
+
+    .timeline-item {
+      padding: 1rem 2rem;
+      position: relative;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
+      width: 45%;
+    }
+
+    .timeline-item::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #22a664;
+      border: 4px solid white;
+      top: calc(50% - 10px);
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .timeline-item.left {
+      left: 0;
+    }
+
+    .timeline-item.right {
+      left: 50%;
+    }
+
+    .timeline-item.left::after {
+      right: -10px;
+    }
+
+    .timeline-item.right::after {
+      left: -10px;
+    }
+
+    .timeline-item h3 {
+      margin-bottom: 0.5rem;
+      color: #22a664;
+    }
+
+    .timeline-item p {
+      text-align: justify;
+    }
+
+    footer {
+      background: #ffffff;
+      color:#22a664;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      border-top: 1px solid rgba(46, 125, 50, 0.2);
+    }
